@@ -10,5 +10,18 @@ Heatbeat like animation is implemented using CALayer, CaBasicAnimation and blurr
 </p>
 * Please bear in mind that this is just a GIF image that consists of three frames. The animation is smoother when run on the actual app 
 
-## Prerequisites
+## How It Works 
+
+You can notice that it has three imageViews
+1. clear plain imageView  ''' secondView '''
+2. blurred imageView ''' backg '''
+3. blurred imageView with opacity of 0.4 ''' thirdView '''
+
+## Built With 
+
+* Xcode 
+
+## Authors
+
+* **Jae Hyun Moon** 
 
