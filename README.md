@@ -12,12 +12,15 @@ Heatbeat like animation is implemented using CALayer, CaBasicAnimation and blurr
 
 ## How It Works 
 
+### Animation
 You can notice that it has three imageViews
 1. clear plain imageView  ``` secondView ```
 2. blurred imageView ``` backg ```
 3. blurred imageView with opacity of 0.4  ``` thirdView ```
 
+* (1)``` circle ``` CALayer (smaller circle) is used as a mask layer of ``` secondView ``` which makes the circle filled with clear image with blurry background 
 
+* ``` circleTwo ``` CALayer (bigger circle) is used as a mask layer of ```thirdView ``` which makes the circle to show an inner layer of (1) with blurry background with opacity of 0.4
 
 ## Built With 
 
