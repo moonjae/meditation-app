@@ -5,6 +5,9 @@ This app plays a guided meditation audio file for the amount of time designated 
 Heatbeat like animation is implemented using CALayer, CaBasicAnimation and blurred imageview is implemented through GPUImage library's blur filter. 
 
 
+
+
+
 <p align="center">
   <img src="https://github.com/moonjae/meditation-app/blob/master/app.gif" width= "200">
 </p>
@@ -13,6 +16,9 @@ Heatbeat like animation is implemented using CALayer, CaBasicAnimation and blurr
 
 
   *Please bear in mind that this is just a GIF image that consists of three frames. The animation is smoother when run on the actual app*
+
+
+
 
 
 
@@ -30,9 +36,17 @@ You can notice that it has three imageViews
 
 * (2) ``` circleTwo ``` CALayer (bigger circle) is used as a mask layer of ```thirdView ``` which makes the circle to show an inner layer of (1) with blurry background with opacity of 0.4
 
+
+
+
 ### Stopping and Resuming Animations 
 
 Because the animations are implemented in viewDidLoad, the animations stop functioning when the enters the foreground after being run on the background. This problem can be solved by stopping animations when the app enters the background and resuming the animations when the app enters the foreground. I used notifications so that certain functions get executed when notifications that the app entered background or the foreground are received. 
+
+
+
+
+
 
 
 ```
@@ -43,6 +57,11 @@ Because the animations are implemented in viewDidLoad, the animations stop funct
 ```
 * When notificadtion is delivered, applicationEnteredBackground function gets executed
 
+
+
+
+
+
 ```
 - (void)applicationEnteredBackground:(NSNotification *)notification {
     [self.view.layer removeAllAnimations];
@@ -51,9 +70,16 @@ Because the animations are implemented in viewDidLoad, the animations stop funct
 ```
 * This function serves to stop the audio file and animations so that they can be resumed when the app enters the foreground again 
 
+
+
+
+
 ## Built With 
 
 * Xcode 
+
+
+
 
 ## Authors
 
