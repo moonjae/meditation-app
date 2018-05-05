@@ -11,9 +11,9 @@ Heatbeat like animation is implemented using CALayer, CaBasicAnimation and blurr
 
 
 
-<p align="center" font-size= "5">
-  * Please bear in mind that this is just a GIF image that consists of three frames. The animation is smoother when run on the actual app 
-</p>
+
+  * Please bear in mind that this is just a GIF image that consists of three frames. The animation is smoother when run on the actual app *
+
 
 
 
