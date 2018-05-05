@@ -13,9 +13,11 @@ Heatbeat like animation is implemented using CALayer, CaBasicAnimation and blurr
 ## How It Works 
 
 You can notice that it has three imageViews
-1. clear plain imageView  ''' secondView '''
-2. blurred imageView ''' backg '''
-3. blurred imageView with opacity of 0.4 ''' thirdView '''
+1. clear plain imageView  ``` secondView ```
+2. blurred imageView ``` backg ```
+3. blurred imageView with opacity of 0.4  ``` thirdView ```
+
+
 
 ## Built With 
 
